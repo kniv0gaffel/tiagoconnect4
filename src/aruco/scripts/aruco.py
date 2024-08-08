@@ -76,12 +76,15 @@ class ArucoDetector:
                 rotation = rvecs[i].flatten()
                 rospy.loginfo("Detected ArUco ID: {} Translation: {} Rotation: {}".format(marker_id[0], translation, rotation))
 
-
+		orientation = transformations.quaternion_from_euler(rotation[0], rotation[1], rotation[2])
                 aruco_pose = PoseStamped()
                 aruco_pose.pose.position.x = translation[0]
                 aruco_pose.pose.position.y = translation[1]
                 aruco_pose.pose.position.z = translation[2]
-                aruco_pose.pose.orientation = transformations.quaternion_from_euler(rotation[0], rotation[1], rotation[2])
+                aruco_pose.pose.orientation.x = orientation[0]
+                aruco_pose.pose.orientation.y = orientation[1]
+                aruco_pose.pose.orientation.z = orientation[2]
+                aruco_pose.pose.orientation.w = orientation[3]
                 aruco_pose.header.stamp = rospy.Time.now()
                 aruco_pose.header.frame_id = data.header.frame_id
                 aruco_pose.header.frame_id = self.strip_leading_slash(aruco_pose.header.frame_id)
@@ -93,6 +96,7 @@ class ArucoDetector:
                 aruco_pose.header.frame_id + " to 'base_footprint'")
                 ps = PoseStamped()
                 ps.pose.position = aruco_pose.pose.position
+		ps.pose.orientation = aruco_pose.pose.orientation
 
                 # rospy.loginfo("Frames: " + str(self.tfBuffer.all_frames_as_yaml()))
                 ps.header.stamp = self.tfBuffer.get_latest_common_time("base_footprint", aruco_pose.header.frame_id)
@@ -101,8 +105,9 @@ class ArucoDetector:
                 while not transform_ok and not rospy.is_shutdown():
                     try:
                         transform = self.tfBuffer.lookup_transform("base_footprint", 
-                                               ps.header.frame_id,
-                                               rospy.Time(0))
+                                                ps.header.frame_id,
+						ps.header.stamp,
+                                                rospy.Duration(0))
                         aruco_ps = do_transform_pose(ps, transform)
                         transform_ok = True
                     except tf2.ExtrapolationException as e:
