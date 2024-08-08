@@ -8,7 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/brage/ROBIN/tiagoconnect4/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH='/home/brage/ROBIN/tiagoconnect4/devel/lib:/opt/ros/melodic/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/.singularity.d/libs'
+export LD_LIBRARY_PATH="/home/brage/ROBIN/tiagoconnect4/devel/lib:$LD_LIBRARY_PATH"
+export LUA_PATH=';;/opt/pal/ferrum/share/lua/5.1/?.lua;/opt/pal/ferrum/share/lua/5.1/?.lua'
 export PKG_CONFIG_PATH="/home/brage/ROBIN/tiagoconnect4/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/brage/ROBIN/tiagoconnect4/build'
 export ROSLISP_PACKAGE_DIRECTORIES='/home/brage/ROBIN/tiagoconnect4/devel/share/common-lisp'
