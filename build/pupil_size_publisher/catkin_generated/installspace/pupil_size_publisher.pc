@@ -1,0 +1,8 @@
+prefix=/home/brage/ROBIN/tiagoconnect4/install
+
+Name: pupil_size_publisher
+Description: Description of pupil_size_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs

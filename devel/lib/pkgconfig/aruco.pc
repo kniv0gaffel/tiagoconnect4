@@ -1,0 +1,8 @@
+prefix=/home/brage/ROBIN/tiagoconnect4/devel
+
+Name: aruco
+Description: Description of aruco
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs

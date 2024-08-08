@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>aruco</name>
+  <version>0.0.0</version>
+  <description>Finds arucotags and outputs StampedPose for the position and orientatin on world coordiantes (base_footprint)</description>
+
+  <maintainer email="user@todo.todo">todo</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>rospy</depend>
+  <depend>python-numpy</depend>
+  <depend>std_msgs</depend>
+  <depend>cv2</depend>
+  <depend>tf2_ros</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge </depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <export>
+    <build_type>catkin</build_type>
+  </export>
+</package>
