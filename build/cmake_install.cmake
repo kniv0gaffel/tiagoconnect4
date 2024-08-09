@@ -138,6 +138,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/brage/ROBIN/tiagoconnect4/build/gtest/cmake_install.cmake")
   include("/home/brage/ROBIN/tiagoconnect4/build/pupil_size_publisher/cmake_install.cmake")
   include("/home/brage/ROBIN/tiagoconnect4/build/aruco/cmake_install.cmake")
+  include("/home/brage/ROBIN/tiagoconnect4/build/pick_piece/cmake_install.cmake")
 
 endif()
 

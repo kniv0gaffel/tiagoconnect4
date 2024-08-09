@@ -1,0 +1,8 @@
+prefix=/home/brage/ROBIN/tiagoconnect4/install
+
+Name: pick_piece
+Description: Description of pick_piece
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs geometry_msgs moveit_ros_planning_interface

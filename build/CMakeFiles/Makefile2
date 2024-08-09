@@ -75,6 +75,7 @@ CMAKE_BINARY_DIR = /home/brage/ROBIN/tiagoconnect4/build
 all: gtest/all
 all: pupil_size_publisher/all
 all: aruco/all
+all: pick_piece/all
 
 .PHONY : all
 
@@ -82,6 +83,7 @@ all: aruco/all
 preinstall: gtest/preinstall
 preinstall: pupil_size_publisher/preinstall
 preinstall: aruco/preinstall
+preinstall: pick_piece/preinstall
 
 .PHONY : preinstall
 
@@ -94,6 +96,7 @@ clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: pupil_size_publisher/clean
 clean: aruco/clean
+clean: pick_piece/clean
 
 .PHONY : clean
 
@@ -171,6 +174,97 @@ gtest/googlemock/gtest/clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/c
 gtest/googlemock/gtest/clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 
 .PHONY : gtest/googlemock/gtest/clean
+
+#=============================================================================
+# Directory level rules for directory pick_piece
+
+# Recursive "all" directory target.
+pick_piece/all: pick_piece/CMakeFiles/pick_piece.dir/all
+
+.PHONY : pick_piece/all
+
+# Recursive "preinstall" directory target.
+pick_piece/preinstall:
+
+.PHONY : pick_piece/preinstall
+
+# Recursive "clean" directory target.
+pick_piece/clean: pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/pick_piece.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/tf_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/tf_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+pick_piece/clean: pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
+
+.PHONY : pick_piece/clean
 
 #=============================================================================
 # Directory level rules for directory pupil_size_publisher
@@ -644,7 +738,7 @@ pupil_size_publisher/CMakeFiles/roscpp_generate_messages_py.dir/clean:
 pupil_size_publisher/CMakeFiles/pupil_size_publisher.dir/all:
 	$(MAKE) $(MAKESILENT) -f pupil_size_publisher/CMakeFiles/pupil_size_publisher.dir/build.make pupil_size_publisher/CMakeFiles/pupil_size_publisher.dir/depend
 	$(MAKE) $(MAKESILENT) -f pupil_size_publisher/CMakeFiles/pupil_size_publisher.dir/build.make pupil_size_publisher/CMakeFiles/pupil_size_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num=12,13 "Built target pupil_size_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num=14,15 "Built target pupil_size_publisher"
 .PHONY : pupil_size_publisher/CMakeFiles/pupil_size_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -879,6 +973,2004 @@ rosgraph_msgs_generate_messages_py: pupil_size_publisher/CMakeFiles/rosgraph_msg
 pupil_size_publisher/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 	$(MAKE) $(MAKESILENT) -f pupil_size_publisher/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make pupil_size_publisher/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 .PHONY : pupil_size_publisher/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_nodejs: pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_srvs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_lisp: pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+
+.PHONY : std_srvs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_eus: pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+
+.PHONY : std_srvs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_cpp: pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+
+.PHONY : std_srvs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target tf_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_nodejs: pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+.PHONY : tf_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/pick_piece.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/pick_piece.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/pick_piece.dir/build.make pick_piece/CMakeFiles/pick_piece.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/pick_piece.dir/build.make pick_piece/CMakeFiles/pick_piece.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num=12,13 "Built target pick_piece"
+.PHONY : pick_piece/CMakeFiles/pick_piece.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/pick_piece.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/pick_piece.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/pick_piece.dir/rule
+
+# Convenience name for target.
+pick_piece: pick_piece/CMakeFiles/pick_piece.dir/rule
+
+.PHONY : pick_piece
+
+# clean rule for target.
+pick_piece/CMakeFiles/pick_piece.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/pick_piece.dir/build.make pick_piece/CMakeFiles/pick_piece.dir/clean
+.PHONY : pick_piece/CMakeFiles/pick_piece.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/tf_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target tf_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_lisp: pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+.PHONY : tf_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/tf_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/tf_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target tf_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/tf_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/tf_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_eus: pick_piece/CMakeFiles/tf_generate_messages_eus.dir/rule
+
+.PHONY : tf_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/tf_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/tf_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target tf_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_cpp: pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+.PHONY : tf_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_lisp: pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_cpp: pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/actionlib_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_py: pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+.PHONY : actionlib_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_py: pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_nodejs: pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_nodejs: pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target moveit_msgs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_lisp: pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target object_recognition_msgs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_py: pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target moveit_msgs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_eus: pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_cpp: pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_py: pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target moveit_msgs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_py: pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target object_recognition_msgs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_lisp: pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_eus: pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target moveit_msgs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_nodejs: pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_cpp: pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_cpp: pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_lisp: pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target moveit_ros_manipulation_gencfg"
+.PHONY : pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
+
+# Convenience name for target.
+moveit_ros_manipulation_gencfg: pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
+
+.PHONY : moveit_ros_manipulation_gencfg
+
+# clean rule for target.
+pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/clean
+.PHONY : pick_piece/CMakeFiles/moveit_ros_manipulation_gencfg.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_cpp: pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : shape_msgs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_eus: pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_nodejs: pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_nodejs: pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target object_recognition_msgs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_cpp: pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target octomap_msgs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_eus: pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_lisp: pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_py: pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target moveit_msgs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_cpp: pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : moveit_msgs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/tf_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/tf_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_py.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_py.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target tf_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/tf_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/tf_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_py: pick_piece/CMakeFiles/tf_generate_messages_py.dir/rule
+
+.PHONY : tf_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/tf_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf_generate_messages_py.dir/build.make pick_piece/CMakeFiles/tf_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/tf_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_nodejs: pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_lisp: pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_lisp: pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_lisp: pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : shape_msgs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target octomap_msgs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_lisp: pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target std_srvs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+.PHONY : std_srvs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/std_srvs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target moveit_ros_planning_gencfg"
+.PHONY : pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
+
+# Convenience name for target.
+moveit_ros_planning_gencfg: pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
+
+.PHONY : moveit_ros_planning_gencfg
+
+# clean rule for target.
+pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/clean
+.PHONY : pick_piece/CMakeFiles/moveit_ros_planning_gencfg.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target actionlib_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_eus: pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/actionlib_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target trajectory_msgs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_py: pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+.PHONY : trajectory_msgs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_nodejs: pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_eus: pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
+
+.PHONY : shape_msgs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_nodejs: pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : shape_msgs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target shape_msgs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_py: pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+
+.PHONY : shape_msgs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/shape_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target object_recognition_msgs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_eus: pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target object_recognition_msgs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_nodejs: pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : object_recognition_msgs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target octomap_msgs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_cpp: pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_eus: pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_gencfg"
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_gencfg: pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+
+.PHONY : dynamic_reconfigure_gencfg
+
+# clean rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target octomap_msgs_generate_messages_nodejs"
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_nodejs: pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_nodejs
+
+# clean rule for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/clean
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target octomap_msgs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_py: pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/octomap_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_cpp: pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target visualization_msgs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_py: pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target dynamic_reconfigure_generate_messages_lisp"
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+dynamic_reconfigure_generate_messages_lisp: pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+
+.PHONY : dynamic_reconfigure_generate_messages_lisp
+
+# clean rule for target.
+pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+.PHONY : pick_piece/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_cpp"
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_cpp: pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# clean rule for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# clean rule for target.
+pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : pick_piece/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/depend
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/brage/ROBIN/tiagoconnect4/build/CMakeFiles --progress-num= "Built target tf2_msgs_generate_messages_eus"
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/brage/ROBIN/tiagoconnect4/build/CMakeFiles 0
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_eus: pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_eus
+
+# clean rule for target.
+pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) $(MAKESILENT) -f pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
+.PHONY : pick_piece/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

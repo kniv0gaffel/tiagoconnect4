@@ -1,2 +1,2 @@
-aruco:pupil_size_publisher
+aruco:pick_piece:pupil_size_publisher
 -DCATKIN_DEVEL_PREFIX=/home/brage/ROBIN/tiagoconnect4/devel -DCMAKE_INSTALL_PREFIX=/home/brage/ROBIN/tiagoconnect4/install -G Unix Makefiles

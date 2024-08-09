@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("pupil_size_publisher")
 subdirs("aruco")
+subdirs("pick_piece")
