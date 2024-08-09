@@ -8,7 +8,7 @@ from tf2_geometry_msgs import do_transform_pose
 from tf_conversions import transformations
 from cv_bridge import CvBridge, CvBridgeError
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import PoseStamped, Pose
+from geometry_msgs.msg import PoseStamped, Pose, Point
 from std_msgs.msg import String
 import numpy as np
 
@@ -47,15 +47,7 @@ class ArucoDetector:
             estimate_result = aruco.estimatePoseSingleMarkers(corners, 0.05, self.camera_matrix, self.dist_coeffs)
 
         else:
-            # rospy.loginfo("No ArUco markers detected.")
             estimate_result = ()
-            # make fake data to avoid error
-            # rvecs = np.array([[[0.0, 0.0, 0.0]]], dtype=np.float32)
-            # tvecs = np.array([[[0.0, 0.0, 0.0]]], dtype=np.float32)
-            # ids = [[0]]
-            # corners = np.array([[[0, 1], [1, 0], [-1, 0], [0, -1]]], dtype=np.float32)
-            # estimate_result = (rvecs, tvecs)
-
 
         if len(estimate_result) == 2:
             rvecs, tvecs = estimate_result
@@ -108,18 +100,18 @@ class ArucoDetector:
 
                 # make an offset to the pose of the marker
                 piece.pose = aruco_ps.pose
-                orientation = piece.pose.orientation
-                offset = tf2.vector3(0.0, 1.0, 0.0)
-                offset_base = tf2.quatRotate(orientation, offset)
-                piece.pose.position.x += offset_base.x
-                piece.pose.position.y += offset_base.y
+                offset = np.array([0.0, 0.0, 0.0, 0.0])
+                orientation_matrix = transformations.quaternion_matrix([piece.pose.orientation.x, piece.pose.orientation.y, piece.pose.orientation.z, piece.pose.orientation.w])
+                offset_base = np.dot(orientation_matrix, offset)
+                # mask out the orientation along the z axis
+                orientation_matrix[0][2] = 0
+                orientation_matrix[1][2] = 0
+                orientation_matrix[2][0] = 0
+                orientation_matrix[2][1] = 0
+                piece.pose.orientation = transformations.quaternion_from_matrix(orientation_matrix)
+                piece.pose.position.x += offset_base[0]
+                piece.pose.position.y += offset_base[1]
                 piece.pose.position.z += 0.35
-                theta_x = np.atan2(offset_base.y, offset_base.z)
-                orientation = tf2.quaternion_from_euler(theta_x, 0, 1.57)
-                piece.pose.orientation.x = orientation[0]
-                piece.pose.orientation.y = orientation[1]
-                piece.pose.orientation.z = orientation[2]
-                piece.pose.orientation.w = orientation[3]
                 piece.header.frame_id = 'base_footprint'
                 rospy.loginfo("Piece in base_footprint frame " + str(piece))
                 self.aruco_pick_pub.publish(piece)
@@ -130,8 +122,8 @@ class ArucoDetector:
         # else:
             # rospy.logwarn("estimatePoseSingleMarkers returned an unexpected number of values.")
         # Display the image with the detected markers and pose
-        # cv2.imshow("Image window", cv_image)
-        # cv2.waitKey(3)
+        cv2.imshow("Image window", cv_image)
+        cv2.waitKey(3)
 
     def cleanup(self):
         cv2.destroyAllWindows()
