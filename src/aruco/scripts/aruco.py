@@ -8,7 +8,7 @@ from tf2_geometry_msgs import do_transform_pose
 from tf_conversions import transformations
 from cv_bridge import CvBridge, CvBridgeError
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import PoseStamped, Pose, Point
+from geometry_msgs.msg import PoseStamped, TransformStamped
 from std_msgs.msg import String
 import numpy as np
 
@@ -20,6 +20,7 @@ class ArucoDetector:
         self.bridge = CvBridge()
         self.tfBuffer = tf2.Buffer()
         self.listener = tf2.TransformListener(self.tfBuffer)
+        self.br = tf2.TransformBroadcaster()
         self.image_sub = rospy.Subscriber("/xtion/rgb/image_raw", Image, self.image_callback)
         self.aruco_pick_pub = rospy.Publisher("/aruco_piece/pick", PoseStamped, queue_size=10)
 
@@ -47,7 +48,16 @@ class ArucoDetector:
             estimate_result = aruco.estimatePoseSingleMarkers(corners, 0.05, self.camera_matrix, self.dist_coeffs)
 
         else:
-            estimate_result = ()
+            # estimate_result = ()
+            angle = 0.5
+            rotation_matrix = np.array([[np.cos(angle), -np.sin(angle), 0],
+                                        [0, 0 ,-1],
+                                        [np.sin(angle), np.cos(angle), 0]])
+            rvecs = transformations.euler_from_matrix(rotation_matrix)
+            rvecs = np.array([rvecs], dtype=np.float32)
+            tvecs = np.array([[0.0, 0.6, 0.5]], dtype=np.float32)
+            estimate_result = (rvecs, tvecs)
+            ids = [[0]]
 
         if len(estimate_result) == 2:
             rvecs, tvecs = estimate_result
@@ -55,10 +65,8 @@ class ArucoDetector:
             for i, marker_id in enumerate(ids):
                 # TODO: Add a check to ensure the marker ID is the one we are looking for
 
-                # Draw bounding box around the marker
-                cv2.polylines(cv_image, [corners[i].astype(int)], True, (0, 255, 0), 2)
-                # Draw axis for the marker
-                aruco.drawAxis(cv_image, self.camera_matrix, self.dist_coeffs, rvecs[i], tvecs[i], 0.1)
+                # aruco.drawAxis(cv_image, self.camera_matrix, self.dist_coeffs, rvecs, tvecs, length=0.1)
+                # aruco.drawDetectedMarkers(cv_image, corners)
 
                 translation = tvecs[i].flatten()
                 rotation = rvecs[i].flatten()
@@ -86,7 +94,7 @@ class ArucoDetector:
                     try:
                         transform = self.tfBuffer.lookup_transform("base_footprint", 
                                                 ps.header.frame_id,
-						ps.header.stamp,
+                                                ps.header.stamp,
                                                 rospy.Duration(0))
                         aruco_ps = do_transform_pose(ps, transform)
                         transform_ok = True
@@ -100,30 +108,47 @@ class ArucoDetector:
 
                 # make an offset to the pose of the marker
                 piece.pose = aruco_ps.pose
-                offset = np.array([0.0, 0.0, 0.0, 0.0])
+                offset = np.array([0.0, 0.0, 0.0, 1.0])
                 orientation_matrix = transformations.quaternion_matrix([piece.pose.orientation.x, piece.pose.orientation.y, piece.pose.orientation.z, piece.pose.orientation.w])
                 offset_base = np.dot(orientation_matrix, offset)
-                # mask out the orientation along the z axis
-                orientation_matrix[0][2] = 0
-                orientation_matrix[1][2] = 0
-                orientation_matrix[2][0] = 0
-                orientation_matrix[2][1] = 0
-                piece.pose.orientation = transformations.quaternion_from_matrix(orientation_matrix)
+                #mask out the orientation along the z axis
+                # orientation_matrix[0][2] = 0
+                # orientation_matrix[1][2] = 0
+                # orientation_matrix[2][0] = 0
+                # orientation_matrix[2][1] = 0
+                # orientation_matrix[2][2] = -1
+                #rotate 180 degrees along the x axis
+                orientation_matrix = np.dot(orientation_matrix, transformations.rotation_matrix(np.pi/2, [0, 1, 0]))
+
+
+
+
+                new_orientation = transformations.quaternion_from_matrix(orientation_matrix)
+                new_orientation = new_orientation / np.linalg.norm(new_orientation)
+                piece.pose.orientation.x = new_orientation[0]
+                piece.pose.orientation.y = new_orientation[1]
+                piece.pose.orientation.z = new_orientation[2]
+                piece.pose.orientation.w = new_orientation[3]
                 piece.pose.position.x += offset_base[0]
                 piece.pose.position.y += offset_base[1]
-                piece.pose.position.z += 0.35
+                piece.pose.position.z += 0.0
                 piece.header.frame_id = 'base_footprint'
                 rospy.loginfo("Piece in base_footprint frame " + str(piece))
                 self.aruco_pick_pub.publish(piece)
-
-                # Optionally display the translation and rotation on the image
-                # cv2.putText(cv_image, "ID: {} T: {} R: {}".format(marker_id[0], translation, rotation),
-                            # tuple(corners[i][0][0].astype(int)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2, cv2.LINE_AA)
-        # else:
-            # rospy.logwarn("estimatePoseSingleMarkers returned an unexpected number of values.")
-        # Display the image with the detected markers and pose
-        cv2.imshow("Image window", cv_image)
-        cv2.waitKey(3)
+                tr = TransformStamped()
+                tr.header.stamp = rospy.Time.now()
+                tr.header.frame_id = "base_footprint"
+                tr.child_frame_id = "piece"
+                tr.transform.translation.x = piece.pose.position.x
+                tr.transform.translation.y = piece.pose.position.y
+                tr.transform.translation.z = piece.pose.position.z
+                tr.transform.rotation.x = piece.pose.orientation.x
+                tr.transform.rotation.y = piece.pose.orientation.y
+                tr.transform.rotation.z = piece.pose.orientation.z
+                tr.transform.rotation.w = piece.pose.orientation.w
+                self.br.sendTransform(tr)
+        # cv2.imshow("Image window", cv_image)
+        # cv2.waitKey(3)
 
     def cleanup(self):
         cv2.destroyAllWindows()
